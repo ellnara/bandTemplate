@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+  .navbar {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 14px 23px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .selection {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .selection .more {
+    font-size: 15px;  
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: black;
+    cursor: pointer;
+  }
+  
+  .navbar a:hover, .selection:hover .more {
+    background-color: rgb(155, 153, 153);
+  }
+  
+  .selection-items {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .selection-items a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    float: none;
+    text-align: left;
+  }
+  .selection-items a:hover {
+    background-color: #ddd;
+  }
+  .selection:hover .selection-items {
+    display: block;
+  }
+  .search{
+      color: white;
+      float: right;
+      padding: 14px 20px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .search:hover{
+      background-color: rgb(235, 59, 59);
+  }
+  header{
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+  }
+  img{
+      vertical-align: middle;
+      width: 100%;
+  }
+  
+  /* Slideshow container */
+  #slideshow {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .location {
+    color: #f2f2f2;
+    font-family: sans-serif;
+    font-size: 21px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 23px;
+    min-width: 100%;
+    text-align: center;
+  }
+  .description{
+      font-size: 14px;
+      font-weight: bold;
+  }
+  .dot {
+    height: 15px;
+    width: 15px;
+    display: none;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation: normal;
+    animation-duration: 5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.about{
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 780px;
+    margin-left: 280px;
+    margin-top: 70px;
+    font-size: 15px;
+}
+.title span{
+    color: rgb(97, 96, 96);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+.title h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 34px;
+}
+.band_member-item{
+    width: 153px;
+    height: 153px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.band_member{
+    display: flex;
+    margin-left: 285px;
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+#tour{
+    background-color: black;
+    color: white;
+    min-width: 100%;
+}
+.title{
+    text-align: center;
+    width: 100%;
+}
+.tour_dates{
+    background-color: white;
+    color: #6b6b6b;
+    width: 770px;
+    margin-left: 290px;
+}
+.tour_dates h4{
+    padding: 10px;
+    border-bottom: 1px solid rgb(182, 182, 182);
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+.tour_dates h4 span{
+    padding: 2px 7px;
+    margin-left: 12px;
+    background-color: #f44336;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.tour_dates p{
+    background-color: black;
+    padding: 2px;
+    margin-right: 18px;
+    color: white;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.ticket{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 17px;
+}
+.tickets{
+    display: flex;
+    padding:28px 42px;
+    margin-left: 240px;
+    background-color: black;
+    padding-bottom: 100px;
+}
+.tickets-item{
+    padding: 8px;
+    width: 245px;
+    
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    font-size: medium;
+}
+.ticket span{
+    color: rgb(109, 109, 109);
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.tickets-item img{
+    width: 245px;
+    height: 183px;
+}
+.tickets-item img:hover{
+    opacity: 60%;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#contact{
+    min-width: 100%;
+}
+.info_form{
+    display: flex;
+    padding: 40px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-left: 220px;
+    margin-top: -5px;
+}
+.email, .name{
+    padding: 10px;
+    width: 150px;
+    margin-left: 16px;
+    border: 1px solid #c0c0c0;
+    font-size: 15px;
+}
+.message{
+    padding: 10px;
+    margin-top: 10px;
+    width: 343px;
+    margin-left: 12px;
+    border: 1px solid #c0c0c0;
+    font-size: 15px;
+}
+#contact .title{
+    padding-top: 70px;
+}
+form{
+    margin-left: 190px;
+    text-align: right;
+}
+form button{
+    font-size: 15px;
+}
+.fa-solid{
+    font-size: 14px;
+    padding: 7px;
+}
+.info{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+footer{
+    min-width: 100%;
+    text-align: center;
+}
+.media{
+    padding: 100px;
+    font-size: 25px;
+    color: #6b6b6b;
+}
